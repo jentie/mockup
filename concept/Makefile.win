@@ -1,0 +1,10 @@
+#
+#	mockup - run Arduino sketch on PC
+#
+# 	Windows version of Makefile, use with MinGW
+# 
+
+mockup: Blink\Blink.ino mockup.c
+#	copy /Y blink\blink.ino blink.c
+	gcc -o mockup blink.c mockup.c
+	
